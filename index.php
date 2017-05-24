@@ -3,9 +3,9 @@
 $con = mysqli_connect("localhost", "root", "ssuhrid", "test");
 
 if($con)
-	echo 'connected';
+//	echo 'connected';
 else
-	echo 'error';	
+//	echo 'error';	
 
 ?>
 
