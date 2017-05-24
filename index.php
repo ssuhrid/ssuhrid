@@ -1,3 +1,14 @@
+<?php
+
+$con = mysqli_connect("localhost", "root", "ssuhrid", "test");
+
+if($con)
+	echo 'connected';
+else
+	echo 'error';	
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
