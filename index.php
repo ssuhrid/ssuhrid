@@ -18,7 +18,27 @@ else
     <!-- CSS  -->
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
-  <body id="home_page">
+  <body>
+  <table>
+  	<tr>
+  	<th>Enroll</th>
+  	<th>Name</th>
+  	<th>Attendence</th>
+  	</tr>
+
+  	<?php
+
+  		$result = $con->query("select * from test");
+
+  		while( $record = $result->fetch_assoc() ){
+  			echo '<tr><td>'.$record['enroll'].'</td>'.
+  				'<td>'.$record['name'].'</td>'.
+  				'<td>'.$record['attendance'].'</td></tr>';
+  		}
+
+  	?>
+
+  </table>
 </body>
 
 
