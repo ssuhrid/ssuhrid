@@ -19,7 +19,7 @@ else
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
   <body>
-  <table>
+  <table border='1'>
   	<tr>
   	<th>Enroll</th>
   	<th>Name</th>
